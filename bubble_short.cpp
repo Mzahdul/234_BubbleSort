@@ -58,3 +58,26 @@ void bubbleSortArray()
 
     } while (pass < n); // step 5
 }    
+
+void display()
+{ 
+    cout << endl;
+    cout << "======================" << endl;
+    cout << "Elemen array yang telah tersusun" << endl;
+    cout << "======================" << endl;
+    cout << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " "; //menampilkan data yang sudah tersusun
+        if ((i + 1) % 10 == 0)
+        {
+            cout << endl; //membuat baris baru setiap 10 elemen
+        }
+    }
+    cout << endl;
+    cout << endl;
+
+    cout << "Jumlah pass = " << n - 1 << endl; //menampilkan jumlah pass yang dibutuhkan untuk mengurutkan array
+    cout << endl;
+    cout << endl;
+}
